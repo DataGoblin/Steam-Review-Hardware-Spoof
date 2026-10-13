@@ -7,6 +7,9 @@ Thankfully steam let you save PC specs to your account, so you only need to use 
 
 Please DO NOT poison the steam hardware survey, every so often Steam will prompt you to submit your hardware to contribute your specs which is a great resource. It does not submit data automatically so you can make sure the spoofing is disabled. 
 
+<img width="627" height="501" alt="image" src="https://github.com/user-attachments/assets/cca254cd-8759-42be-9676-7aecf88a7a33" />
+
+
 # WARNING
 > - **Anti-cheat:** the DLL gets hooked by the Steam client process and patches memory. To minimise risk, do not have any game open and make sure no persistent anti-cheat is running (like Riot Vanguard). If you have a spare computer you don't use for gaming like an awful school laptop, you can just run this tool on it with steam installed to be extra safe.
 
@@ -33,6 +36,8 @@ To switch rigs, run the same commands with a different `$preset` and restart Ste
 
 ## Presets
 
+#### CPU spoofing is DISABLED by default. Swap `SpoofCpu` to `true` in the preset config you pick. 
+
 | Preset | GPU | VRAM | CPU | RAM |
 |---|---|---|---|---|
 | `rtx-pro-6000-blackwell-maxq` | NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition | 96 GB | Ryzen Threadripper PRO 7995WX, 96 cores | 128 GB |
@@ -44,15 +49,15 @@ To switch rigs, run the same commands with a different `$preset` and restart Ste
 | `b200-180gb` | NVIDIA B200 | 180 GB | EPYC 9575F, 64 cores | 2048 GB |
 | `potato` | "Potato Processing Unit" | 1 GB | Athlon 3000G, 2 cores | 4 GB |
 
-All presets pair an NVIDIA GPU with an AMD CPU; see [Limitations](#limitations) for why that matters.
+All presets are NVIDIA GPU with an AMD CPU. Did not test any other pairing! (lazy)
 
-## Turning it off
+## Turn it off
 
-Rename `version.dll` to `version.dll.disabled` in both Steam folders. It takes effect the next time Steam starts.
+Rename `version.dll` to `version.dll.disabled` in both Steam folders. Restart Steam
 
 ## Uninstalling
 
-With Steam closed, from an elevated PowerShell in this folder:
+With Steam closed, run the script below with PowerShell ran as administrator:
 
 ```powershell
 scripts\Uninstall-GPUConfig.ps1
