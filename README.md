@@ -9,6 +9,8 @@ Please DO NOT poison the steam hardware survey, every so often Steam will prompt
 
 <img width="627" height="501" alt="image" src="https://github.com/user-attachments/assets/cca254cd-8759-42be-9676-7aecf88a7a33" />
 
+<img width="475" height="120" alt="image" src="https://github.com/user-attachments/assets/c948043b-ccbf-4339-86f5-1d0265d6ac0a" />
+
 
 # WARNING
 > - **Anti-cheat:** the DLL gets hooked by the Steam client process and patches memory. To minimise risk, do not have any game open and make sure no persistent anti-cheat is running (like Riot Vanguard). If you have a spare computer you don't use for gaming like an awful school laptop, you can just run this tool on it with steam installed to be extra safe.
